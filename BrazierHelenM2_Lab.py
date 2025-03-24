@@ -10,7 +10,7 @@ Description: Program accepts student names and GPAs, checking if they qualify fo
 
 QUIT = "ZZZ" # Provide an exit from the loop
 
-last_name = input("Enter student's last name: ") # variable to store the input of students last name
+last_name = input("Enter student's last name or enter 'ZZZ' to quit:") # variable to store the input of students last name
 
 while last_name != QUIT: # enter loop
     first_name = input("Enter student's first name: ")  # variable to store the input of students first name
@@ -21,4 +21,4 @@ while last_name != QUIT: # enter loop
         print(f"{first_name} {last_name} has made the Honor Roll")
     else: # print exception if student does not qualify for either
         print(f"{first_name} {last_name} does not qualify for the Dean's List or Honor Roll")
-    last_name = input("\nEnter student's last name: ") # continue loop
+    last_name = input("\nEnter student's last name or enter 'ZZZ' to quit: ") # continue loop
